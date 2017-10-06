@@ -7,11 +7,13 @@ require './dao'
 
 class Register < WEBrick::HTTPServlet::AbstractServlet
   def do_POST(request, response)
-    params = JSON.parse request.body
+    params = JSON.parse(request.body, {:symbolize_names => true})
 
     mysql = Dao.new
-    binding.pry
-    mysql.insert(params)
+#    binding.pry
+    mysql.insert params
+
+    true
 
   end
 

@@ -30,9 +30,9 @@
                         // timeout: 10000,
                         data: JSON.stringify(params),
                         dataType: 'json'
-                      }).done(function(){
+                      }).done(function(response){
                         window.location.href = 'thanks.html';
-                      }).fail(function(){
+                      }).fail(function(response){
                         alert('通信に失敗しました');
                         location.reload();
                       });
