@@ -11,7 +11,7 @@ class Dao
     @con.query("SELECT * FROM TEST.USER")
   end
   def insert params
-    @con.query("INSERT INTO TEST.USER(name, age, gender) VALUES(#{params[:name]}, #{params[:age]}, #{params[:gender]})")
+    @con.query("INSERT INTO TEST.USER(name, age, gender) VALUES(\'#{params[:name]}\', #{params[:age]}, #{params[:gender]})")
   end
 
   def test
