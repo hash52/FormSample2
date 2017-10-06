@@ -1,0 +1,21 @@
+current directory: /Users/ulmdesign/hashi.hiroki/workspace/ruby/FormSample2/vender/bundle/ruby/2.4.0/gems/mysql-2.9.1/ext/mysql_api
+/Users/ulmdesign/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20171006-5493-4vsx6y.rb extconf.rb
+checking for mysql_ssl_set()... yes
+checking for rb_str_set_len()... yes
+checking for rb_thread_start_timer()... no
+checking for mysql.h... yes
+creating Makefile
+
+current directory: /Users/ulmdesign/hashi.hiroki/workspace/ruby/FormSample2/vender/bundle/ruby/2.4.0/gems/mysql-2.9.1/ext/mysql_api
+make "DESTDIR=" clean
+
+current directory: /Users/ulmdesign/hashi.hiroki/workspace/ruby/FormSample2/vender/bundle/ruby/2.4.0/gems/mysql-2.9.1/ext/mysql_api
+make "DESTDIR="
+compiling mysql.c
+mysql.c:1320:74: error: use of undeclared identifier 'rb_cFixnum'
+        else if (argv[i] == rb_cNumeric || argv[i] == rb_cInteger || argv[i] == rb_cFixnum)
+                                                                                ^
+1 error generated.
+make: *** [mysql.o] Error 1
+
+make failed, exit code 2
